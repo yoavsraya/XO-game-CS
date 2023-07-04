@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace GUI
 {
@@ -31,6 +32,7 @@ namespace GUI
         {
             string projectFolderPath = System.IO.Directory.GetParent(Application.StartupPath).Parent.FullName;
             string iconFilePath = System.IO.Path.Combine(projectFolderPath, "gameLogo.ico");
+            Icon = new Icon(iconFilePath);
 
             m_LabelPlayers = new Label();
             m_LabelPlayer1 = new Label();
