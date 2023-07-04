@@ -46,6 +46,7 @@ namespace GUI
 
         private void InitializeComponent()
         {
+            Text = "TicTacToeMisere";
             m_AppIconPath = @"C:\Users\Yoav\source\repos\c#\B23 Ex05 YoavSraya 207496464 YonatanBrooker 313592420\GUI\gameLogo.ico";
             Icon = new Icon(m_AppIconPath);
             m_LabelPlayer1Name = new Label();
@@ -158,6 +159,7 @@ namespace GUI
 
         private void bottomTable_Click(object sender, EventArgs e)
         {
+
             Button currentBottom = sender as Button;
             byte col = (byte)(((currentBottom.Left - 10) / 60) + 1);
             byte row = (byte)(((currentBottom.Top - 10) / 60) + 1);
@@ -182,7 +184,7 @@ namespace GUI
                     updateMove(row, col);
                     switchPlayer();
                 }
-
+                m_XOLogics.IfRoundEnded();
             }
         }
 
