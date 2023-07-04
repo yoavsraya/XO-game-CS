@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    class Program
+    public class Program
     {
         public static void Main()
         {

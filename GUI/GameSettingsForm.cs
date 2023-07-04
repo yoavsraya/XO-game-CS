@@ -50,9 +50,9 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(m_UpDownNumOfCols)).BeginInit();
             SuspendLayout();
             StartPosition = FormStartPosition.CenterScreen;
-            // 
+             
             // m_LabelPlayers
-            // 
+             
             m_LabelPlayers.AutoSize = true;
             m_LabelPlayers.Location = new System.Drawing.Point(12, 9);
             m_LabelPlayers.Name = "m_LabelPlayers";
@@ -60,18 +60,18 @@ namespace GUI
             m_LabelPlayers.TabIndex = 0;
             m_LabelPlayers.Text = "Players:";
             m_LabelPlayers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
+             
             // m_LabelPlayer1
-            // 
+             
             m_LabelPlayer1.AutoSize = true;
             m_LabelPlayer1.Location = new System.Drawing.Point(30, 37);
             m_LabelPlayer1.Name = "m_LabelPlayer1";
             m_LabelPlayer1.Size = new System.Drawing.Size(64, 17);
             m_LabelPlayer1.TabIndex = 1;
             m_LabelPlayer1.Text = "Player 1:";
-            // 
+             
             //player 1 Name
-            // 
+             
             m_TextBoxPlayer1Name.Location = new System.Drawing.Point(124, 37);
             m_TextBoxPlayer1Name.Name = "textBox1";
             m_TextBoxPlayer1Name.Size = new System.Drawing.Size(136, 22);
@@ -163,8 +163,6 @@ namespace GUI
             m_ButtonStart.UseVisualStyleBackColor = true;
             m_ButtonStart.Click += buttomStart_clicked;
             m_ButtonStart.Enabled = false;
-            
-
             // 
             // GameSettingsForm
             // 
@@ -190,7 +188,6 @@ namespace GUI
             PerformLayout();
             FormBorderStyle = FormBorderStyle.FixedSingle;
             FormClosing += GameSettingsForm_FormClosing;
-
         }
 
         private void GameSettingsForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -199,7 +196,6 @@ namespace GUI
             {
                 Application.Exit();
             }
-              
         }
 
         private void M_UpDownNumOfCols_ValueChanged(object sender, EventArgs e)
@@ -262,6 +258,5 @@ namespace GUI
             o_name2 = m_TextBoxPlayer2Name.Text;
             o_player2IsHuman = m_CheckBoxPlayer2.Checked == true;
         }
-
    }
 }

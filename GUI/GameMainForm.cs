@@ -29,7 +29,6 @@ namespace GUI
         private FlowLayoutPanel m_ScoreLine;
         private FlowLayoutPanel m_Player1Group;
         private FlowLayoutPanel m_Player2Group;
-        private string m_AppIconPath;
 
         DialogResult m_result;
 
@@ -205,7 +204,6 @@ namespace GUI
             {
                 m_currentPlayer = m_XOLogics.PlayerX;
             }
-
 
         }
 
