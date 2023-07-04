@@ -29,6 +29,9 @@ namespace GUI
 
         private void InitializeComponent()
         {
+            string projectFolderPath = System.IO.Directory.GetParent(Application.StartupPath).Parent.FullName;
+            string iconFilePath = System.IO.Path.Combine(projectFolderPath, "gameLogo.ico");
+
             m_LabelPlayers = new Label();
             m_LabelPlayer1 = new Label();
             m_TextBoxPlayer1Name = new TextBox();
