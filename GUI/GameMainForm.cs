@@ -29,6 +29,7 @@ namespace GUI
         private FlowLayoutPanel m_ScoreLine;
         private FlowLayoutPanel m_Player1Group;
         private FlowLayoutPanel m_Player2Group;
+        private string m_AppIconPath;
 
         DialogResult m_result;
 
@@ -45,6 +46,8 @@ namespace GUI
 
         private void InitializeComponent()
         {
+            m_AppIconPath = @"C:\Users\Yoav\source\repos\c#\B23 Ex05 YoavSraya 207496464 YonatanBrooker 313592420\GUI\gameLogo.ico";
+            Icon = new Icon(m_AppIconPath);
             m_LabelPlayer1Name = new Label();
             m_LabelPlayer2Name = new Label();
             m_LabelnumOfPointsPlayer1 = new Label();
@@ -177,9 +180,9 @@ namespace GUI
                     }
 
                     updateMove(row, col);
+                    switchPlayer();
                 }
 
-                switchPlayer();
             }
         }
 
