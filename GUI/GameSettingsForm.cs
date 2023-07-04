@@ -20,6 +20,7 @@ namespace GUI
         private NumericUpDown m_UpDownNumOfCols;
         private Button m_ButtonStart;
         private Label m_LabelPlayer1;
+        private bool m_SettingsCompleted = false;
 
         public GameSettingsForm()
         {
@@ -157,6 +158,7 @@ namespace GUI
             m_ButtonStart.UseVisualStyleBackColor = true;
             m_ButtonStart.Click += buttomStart_clicked;
             m_ButtonStart.Enabled = false;
+            
 
             // 
             // GameSettingsForm
@@ -182,7 +184,17 @@ namespace GUI
             ResumeLayout(false);
             PerformLayout();
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormClosing += GameSettingsForm_FormClosing;
 
+        }
+
+        private void GameSettingsForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (m_SettingsCompleted == false)
+            {
+                Application.Exit();
+            }
+              
         }
 
         private void M_UpDownNumOfCols_ValueChanged(object sender, EventArgs e)
@@ -216,6 +228,7 @@ namespace GUI
 
         private void buttomStart_clicked(object sender, EventArgs e)
         {
+            m_SettingsCompleted = true;
             Close();
         }
 

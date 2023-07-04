@@ -271,7 +271,6 @@ namespace GUI
 
         }
 
-
         private void createPlayers(in string i_name1, in string i_name2, in bool i_player2IsHuman)
         {
             m_XOLogics.CreatePlayer(i_name1, eBoardShape.X, k_playerHuman, k_firstplayer);

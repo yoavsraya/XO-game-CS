@@ -6,8 +6,8 @@ namespace XO_logics
         public event Action<eGameStatus> gameEndedAction;
 
         private const bool k_Valid = true;
-        private const int k_MaxBoardSize = 9;
-        private const int k_MinBoardSize = 3;
+        private const int k_MaxBoardSize = 10;
+        private const int k_MinBoardSize = 4;
         private Board m_GameBoard;
         private Player m_PlayerX = null;
         private Player m_PlayerO = null;
