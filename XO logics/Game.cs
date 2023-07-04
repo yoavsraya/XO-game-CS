@@ -139,13 +139,6 @@ namespace XO_logics
             m_GameBoard.ClearBoard();
         }
 
-        public Player GetPlayerFromShape(in eBoardShape i_shape)
-        {
-            if (i_shape == eBoardShape.X)
-                return m_PlayerX;
-            else
-                return m_PlayerO;
-        }
 
         public void GetRandomMove(out byte o_row, out byte o_col)
         {
