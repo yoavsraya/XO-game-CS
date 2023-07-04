@@ -46,12 +46,10 @@ namespace GUI
 
         private void InitializeComponent()
         {
-            //string projectFolderPath = System.IO.Directory.GetParent(Application.StartupPath).Parent.FullName;
-            //string iconFilePath = System.IO.Path.Combine(projectFolderPath, "gameLogo.ico");
-            //Icon = new Icon(iconFilePath);
-            //Text = "TicTacToeMisere";
-            //m_AppIconPath = @"C:\Users\Yoav\source\repos\c#\B23 Ex05 YoavSraya 207496464 YonatanBrooker 313592420\GUI\gameLogo.ico";
-            //Icon = new Icon(m_AppIconPath);
+            string projectFolderPath = System.IO.Directory.GetParent(Application.StartupPath).Parent.FullName;
+            string iconFilePath = System.IO.Path.Combine(projectFolderPath, "gameLogo.ico");
+            Icon = new Icon(iconFilePath);
+            
             m_LabelPlayer1Name = new Label();
             m_LabelPlayer2Name = new Label();
             m_LabelnumOfPointsPlayer1 = new Label();
