@@ -7,7 +7,7 @@ namespace XO_logics
 
         private const bool k_Valid = true;
         private const int k_MaxBoardSize = 10;
-        private const int k_MinBoardSize = 4;
+        private const int k_MinBoardSize = 3;
         private Board m_GameBoard;
         private Player m_PlayerX = null;
         private Player m_PlayerO = null;
